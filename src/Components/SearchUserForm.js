@@ -22,10 +22,4 @@ const SearchUserForm = (props) => {
   )
 }
 
-const mapStateToProps = (state) => ({
-  isPendingData: state.isPendingData,
-  minions: state.minions,
-  user: state.user
-})
-
-export default connect(mapStateToProps, { searchPlayer })(SearchUserForm)
+export default connect(null, { searchPlayer })(SearchUserForm)
